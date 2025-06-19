@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="game-container">
+        <h1>Number Guessing Game</h1>
+        <div class="card" id="gameCard">
+            <div class="card-face card-front">
+                <label for="difficultySelect">Select Difficulty:</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy (1-50, 15 attempts)</option>
+                    <option value="medium" selected>Medium (1-100, 10 attempts)</option>
+                    <option value="hard">Hard (1-200, 5 attempts)</option>
+                </select>
+                <button id="startButton">Start Game</button>
+            </div>
+            <div class="card-face card-back">
+                <p id="instructions">Guess a number between 1 and 100. You have 10 attempts.</p>
+                <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess" />
+                <button id="guessButton">Guess</button>
+                <button id="restartButton" style="display:none;">Restart</button>
+                <p id="feedback"></p>
+                <p id="attempts"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
