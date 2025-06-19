@@ -1,2 +1,2 @@
 # name-guessing-game
-it guesses games
+dekhle kitna time lagega guess krne tereko
